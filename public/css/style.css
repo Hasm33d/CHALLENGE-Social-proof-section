@@ -75,6 +75,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 15rem 25rem;
 }
 
 .rates {
@@ -159,15 +160,67 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 25rem;
+}
+.proof article {
+  background-color: var(--clr-p-1);
+  color: white;
+  max-width: 30%;
+  padding: 30px;
+  border-radius: 0.5rem;
+}
+.proof article p {
+  font-size: 1.5rem;
+  line-height: 25px;
+  opacity: 0.9;
+}
+.proof article:nth-child(1) {
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+.proof article:nth-child(2) {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.proof article:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.user img {
+  border-radius: 10rem;
+  width: 3.5rem;
+  margin-right: 1.5rem;
+}
+.user h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.user h3 {
+  color: var(--clr-p-2);
+  opacity: 0.7;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.4rem;
   text-align: center;
-  margin: 10px;
+  padding: 10px;
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(300deg, 43%, 22%);
+}
+.attribution a:hover {
+  color: hsl(333deg, 80%, 67%);
 }
 
 :root {
@@ -182,4 +235,71 @@ main {
   font-family: var(--ff-1);
   font-size: 62.5%;
   --ff-p: 1.5rem;
+}
+
+@media screen and (max-width: 1500px) {
+  main {
+    margin: 20rem;
+  }
+}
+@media screen and (max-width: 1350px) {
+  main {
+    margin: 10rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main {
+    margin: 5rem;
+  }
+}
+@media screen and (max-width: 1090px) {
+  body {
+    display: block;
+  }
+
+  main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 7rem 3rem;
+  }
+
+  .rates {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .texts {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .texts h1 {
+    margin-bottom: 2rem;
+  }
+
+  .stars {
+    display: block;
+    width: 100%;
+  }
+  .stars .rate {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .stars .star {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .proof {
+    display: block;
+    height: unset;
+  }
+  .proof article {
+    max-width: 100%;
+    min-width: 280px;
+    margin: 10px 0;
+  }
 }
