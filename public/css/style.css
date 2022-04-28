@@ -1,0 +1,185 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+:root {
+  --bp-mobile: 375px;
+  --bp-desktop: 1440px;
+  --clr-p-1: hsl(300, 43%, 22%);
+  --clr-p-2: hsl(333, 80%, 67%);
+  --clr-s-1: hsl(303, 10%, 53%);
+  --clr-s-2: hsl(300, 24%, 96%);
+  --clr-s-3: hsl(0, 0%, 100%);
+  --ff-1: "League Spartan", sans-serif;
+  font-family: var(--ff-1);
+  font-size: 62.5%;
+  --ff-p: 1.5rem;
+}
+
+body {
+  display: grid;
+  place-items: end center;
+  height: 100vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.texts {
+  width: 30%;
+}
+.texts h1 {
+  color: var(--clr-p-1);
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.texts p {
+  color: var(--clr-s-1);
+  font-size: 1.5rem;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.stars {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.stars .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  width: 90%;
+  background-color: var(--clr-s-2);
+  border-radius: 0.5rem;
+}
+.stars .star {
+  margin-right: 2rem;
+}
+.stars .star img {
+  margin-right: 0.3rem;
+}
+.stars p {
+  color: var(--clr-p-1);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.stars .rate:nth-child(1) {
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+.stars .rate:nth-child(2) {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.stars .rate:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.proof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 10px;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+:root {
+  --bp-mobile: 375px;
+  --bp-desktop: 1440px;
+  --clr-p-1: hsl(300, 43%, 22%);
+  --clr-p-2: hsl(333, 80%, 67%);
+  --clr-s-1: hsl(303, 10%, 53%);
+  --clr-s-2: hsl(300, 24%, 96%);
+  --clr-s-3: hsl(0, 0%, 100%);
+  --ff-1: "League Spartan", sans-serif;
+  font-family: var(--ff-1);
+  font-size: 62.5%;
+  --ff-p: 1.5rem;
+}
